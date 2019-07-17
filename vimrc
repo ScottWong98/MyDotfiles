@@ -1,5 +1,6 @@
 "===> basic settings {
   set nocompatible
+	set encoding=utf-8
   filetype on
   filetype indent on
   filetype plugin on

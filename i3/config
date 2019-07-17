@@ -39,7 +39,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id fcitx
 
 # set background
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/07.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/10.jpg
+#exec --no-startup-id variety
 ###################################################
 
 
@@ -48,14 +49,15 @@ for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 # set gaps
-gaps inner 10
+gaps inner 5
 
 ############################
 ##### scott's bindsym ######
 #
 bindsym $mod+Shift+t exec alacritty -e ranger # open ranger in a new terminal
 bindsym $mod+c exec google-chrome-stable # open chrome
-bindsym $mod+d exec rofi -show run # run rofi
+#bindsym $mod+d exec rofi -show run # run rofi
+bindsym $mod+m exec firefox
 #bindsym $mod+Shift+w exec dmenu_run networkmanager_dmenu
 #
 ############################
@@ -68,7 +70,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+m exec dmenu_run
+bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -211,5 +213,4 @@ bindsym XF86AudioMute exec --no-startup-id pactl -- set-sink-mute 0 toggle #mute
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 #increase
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 #decrease
-
 
